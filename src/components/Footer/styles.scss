@@ -1,0 +1,118 @@
+footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  .ready {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    font-weight: bold;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  .lets-talk {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #07e99a;
+    }
+    span {
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+      display: block;
+      text-align: center;
+    }
+  }
+  .split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 600px) {
+      display: block;
+    }
+    .left {
+      .subscribe {
+        font-size: 1.5rem;
+        @media (max-width: 600px) {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+      }
+      .email-input {
+        margin-bottom: 3rem;
+        input {
+          background-color: #3d04c4;
+          color: white;
+          border: none;
+          outline: none;
+          border-bottom: 3px solid #07e99a;
+          padding: 0.5rem;
+          min-width: 350px;
+          margin-right: 0;
+          @media (max-width: 600px) {
+            min-width: 200px;
+            display: block;
+            margin: auto;
+          }
+        }
+        svg {
+          // border-bottom: 3px solid #07e99a;
+          padding: 0.45rem;
+          box-sizing: content-box;
+          // margin-left: -10px;
+          @media (max-width: 600px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .right {
+      .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        font-size: 1rem;
+        @media screen and (max-width: 1000px) {
+          grid-template-columns: 1fr;
+        }
+        a {
+          color: white;
+          @media (max-width: 600px) {
+            display: none;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .footer-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .social-icons {
+      svg {
+        width: 15px;
+        height: 15px;
+        padding-right: 1rem;
+        fill: #fff;
+        box-sizing: content-box;
+        // stroke: #fff;
+      }
+    }
+    .footer-text {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+  }
+}

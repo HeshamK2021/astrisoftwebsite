@@ -1,0 +1,63 @@
+.contact-us {
+  .contact-info {
+    margin-top: 14rem;
+    margin-bottom: 4rem;
+    @media (max-width: 600px) {
+      margin-top: 4rem;
+    }
+
+    .big-text {
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+    }
+    .phone-mail {
+      max-width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .map-img {
+    z-index: -1;
+    @media (max-width: 600px) {
+      display: none;
+    }
+    img {
+      z-index: -1;
+      width: 60%;
+      height: 60%;
+      display: block;
+      margin-left: auto;
+    }
+  }
+  .our-locations {
+    max-width: 70%;
+    padding: 9rem 5rem;
+    margin-top: -10rem;
+    z-index: 5;
+    color: #fff;
+    @media (max-width: 600px) {
+      max-width: 100%;
+      margin-top: 0;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 4rem;
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+    }
+    .locations {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  }
+}
